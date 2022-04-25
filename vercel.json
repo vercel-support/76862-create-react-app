@@ -1,0 +1,37 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "User-Agent",
+          "value": "Twitterbot"
+        }
+      ],
+      "destination": "https://nextjs.org/"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "User-Agent",
+          "value": "Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)"
+        }
+      ],
+      "destination": "https://nextjs.org/"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "User-Agent",
+          "value": "Livedocsbot"
+        }
+      ],
+      "destination": "https://nextjs.org/"
+    }
+  ]
+}
